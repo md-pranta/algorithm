@@ -1,0 +1,15 @@
+n = int(input())
+i = int(input())
+j = int(input())
+k = int(input())
+m = int(input())
+onBit = (1 << i)
+offBit = ~(1 << j)
+toggleBit = (1 << k)
+checkBit = (1 << m)
+
+print(n | onBit)
+print(n & offBit)
+print(n ^ toggleBit)
+print(False if (n & checkBit) == 0 else True)
+
